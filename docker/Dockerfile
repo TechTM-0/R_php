@@ -7,8 +7,6 @@ FROM php:8.1.18-fpm
 COPY docker/php.ini /usr/local/etc/php/
 # srcフォルダを/var/www/htmlにコピー
 COPY src /var/www/html
-# default.confを/etc/nginx/conf.dにコピー
-COPY docker/default.conf /etc/nginx/conf.d
 
 # Test config
 #RUN nginx -t
